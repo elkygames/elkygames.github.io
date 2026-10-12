@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🗺️ Adventure Games - Play Free Online | Elky Games</title>
+<meta name="description" content="Play 14+ free online 🗺️ Adventure games on Elky Games! No download required.">
+<meta name="keywords" content="🗺️ Adventure games, free online games, browser games, play games online, elky games">
+<meta name="google-site-verification" content="LyuUg9kXEDJyieGT31q4t4D3FCYdSkOHwGSCc7Mw-bQ" />
+<meta name="msvalidate.01" content="398012EA8EA807029AB3FCB67C89B0D6" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="🗺️ Adventure Games - Play Free Online">
+<meta property="og:description" content="Play 14+ free online 🗺️ Adventure games on Elky Games!">
+<meta property="og:image" content="image.png">
+<meta property="og:image:secure_url" content="image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:site_name" content="Elky Games">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🗺️ Adventure Games - Play Free Online">
+<meta name="twitter:description" content="Play 14+ free online 🗺️ Adventure games!">
+<meta name="twitter:image" content="image.png">
+<link rel="icon" type="image/png" href="icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Ad slots — always visible */
+.ad-slot-container { display: block !important; border: none !important; background: transparent !important; border-radius: 0 !important; padding: 0 !important; box-shadow: none !important; outline: none !important; }
+.sticky-side-ad { display: flex !important; border: none !important; background: transparent !important; border-radius: 0 !important; padding: 0 !important; box-shadow: none !important; }
+@media (max-width: 1400px) { .sticky-side-ad { display: none !important; } }
+.ad-slot-container iframe { display: block; margin: 0 auto; border: none; max-width: 100%; }
+.double-ad-row { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; justify-content: center !important; align-items: center !important; gap: 20px !important; }
+@media (max-width: 1500px) { .double-ad-row { flex-wrap: wrap !important; } }
+@media (max-width: 800px) { .double-ad-row { flex-direction: column !important; } }
+</style>
+</head>
+<body>
+
+<!-- AD_SLOT_LEFT_STICKY_START (Adsterra 160x600) -->
+<div class="sticky-side-ad left-sticky-ad ad-slot-container" data-ad-slot="left-sticky" data-width="160" data-height="600" style="position:fixed;top:150px;left:10px;z-index:90;">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '6fa88146d85ebfffbe8160e97cda6e76',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script src="https://verticallysaturate.com/6fa88146d85ebfffbe8160e97cda6e76/invoke.js"></script>
+</div>
+<!-- AD_SLOT_LEFT_STICKY_END -->
+
+<!-- AD_SLOT_RIGHT_STICKY_START (Adsterra 160x600) -->
+<div class="sticky-side-ad right-sticky-ad ad-slot-container" data-ad-slot="right-sticky" data-width="160" data-height="600" style="position:fixed;top:150px;right:10px;z-index:90;">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '6fa88146d85ebfffbe8160e97cda6e76',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script src="https://verticallysaturate.com/6fa88146d85ebfffbe8160e97cda6e76/invoke.js"></script>
+</div>
+<!-- AD_SLOT_RIGHT_STICKY_END -->
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="./" class="settings-btn" title="Back to Home"><i class="fa-solid fa-arrow-left"></i></a>
+  </div>
+  <a href="./" class="brand-logo">
+    <img src="icon.png" alt="Icon" class="brand-icon" onerror="this.style.display='none'">
+    <div class="brand-title"><span class="c1">E</span><span class="c2">l</span><span class="c3">k</span><span class="c4">y</span></div>
+  </a>
+  <div class="search-view-wrapper">
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search games..." oninput="handleSearch()">
+    </div>
+    <div class="view-toggle-box">
+      <button class="view-btn" id="btnIconView" onclick="setViewMode('icon')"><i class="fa-solid fa-border-all"></i> Icon</button>
+      <button class="view-btn active" id="btnCoverView" onclick="setViewMode('cover')"><i class="fa-solid fa-image"></i> Cover</button>
+    </div>
+  </div>
+  <div class="nav-right-actions">
+    <button class="icon-filter-btn btn-order" id="navOrderBtn" title="Toggle List Order" onclick="toggleOrder()"><i class="fa-solid fa-arrow-down-short-wide" id="navOrderIcon"></i></button>
+    <button class="playstore-nav-btn" title="Apps" onclick="togglePlaystoreModal()"><i class="fa-brands fa-google-play"></i></button>
+    <button class="icon-filter-btn btn-pages" title="Pages" onclick="togglePagesModal()"><i class="fa-solid fa-layer-group"></i></button>
+  </div>
+</nav>
+
+<div class="container">
+  <div style="margin:20px 0 12px 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+    <h2 style="font-size:24px;font-weight:800;color:#00E5FF;margin:0;">🗺️ Adventure</h2>
+    <span style="background:linear-gradient(135deg,#FF007A,#8b3dff);color:#fff;font-size:12px;font-weight:800;padding:4px 12px;border-radius:12px;">14 games</span>
+  </div>
+  <div class="categories-bar" id="categoriesBar">
+<a href="category-cozy" class="category-chip">☕ Cozy</a><a href="category-kids" class="category-chip">🎈 Kids</a><a href="category-3d" class="category-chip">🎮 3d</a><a href="category-classic" class="category-chip">🎮 Classic</a><a href="category-color" class="category-chip">🎮 Color</a><a href="category-dog" class="category-chip">🎮 Dog</a><a href="category-drawing" class="category-chip">🎮 Drawing</a><a href="category-educational" class="category-chip">🎮 Educational</a><a href="category-escape" class="category-chip">🎮 Escape</a><a href="category-flash" class="category-chip">🎮 Flash</a><a href="category-funny" class="category-chip">🎮 Funny</a><a href="category-halloween" class="category-chip">🎮 Halloween</a><a href="category-love" class="category-chip">🎮 Love</a><a href="category-number" class="category-chip">🎮 Number</a><a href="category-obby" class="category-chip">🎮 Obby</a><a href="category-popular" class="category-chip">🎮 Popular</a><a href="category-rpg" class="category-chip">🎮 Rpg</a><a href="category-scary" class="category-chip">🎮 Scary</a><a href="category-unity" class="category-chip">🎮 Unity</a><a href="category-words" class="category-chip">🎮 Words</a><a href="category-matching" class="category-chip">🎯 Matching</a><a href="category-animals" class="category-chip">🐾 Animals</a><a href="category-point-click" class="category-chip">👆 Point &amp; Click</a><a href="category-horror" class="category-chip">👻 Horror</a><a href="category-story" class="category-chip">📖 Story</a><a href="category-mobile" class="category-chip">📱 Mobile</a><a href="category-hidden-object" class="category-chip">🔍 Hidden Object</a><a href="category-arcade" class="category-chip">🕹️ Arcade</a><a href="category-mouse" class="category-chip">🖱️ Mouse</a><a href="category-adventure" class="category-chip active">🗺️ Adventure</a><a href="category-brain" class="category-chip">🧠 Brain</a><a href="category-intelligence" class="category-chip">🧠 Intelligence</a><a href="category-logic" class="category-chip">🧠 Logic</a><a href="category-puzzle" class="category-chip">🧩 Puzzle</a>
+  </div>
+  <div class="games-grid cover-mode" id="gamesGrid"></div>
+</div>
+
+<div class="double-ad-row" style="max-width:1400px;margin:30px auto;padding:0 15px;">
+  <div class="ad-slot-container" data-ad-slot="before-footer-1" data-width="728" data-height="90" style="text-align:center;flex-shrink:0;">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'c543bedfcd8b2c2e2a4fdf03fb87a810',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://verticallysaturate.com/c543bedfcd8b2c2e2a4fdf03fb87a810/invoke.js"></script>
+  </div>
+  <div class="ad-slot-container" data-ad-slot="before-footer-2" data-width="728" data-height="90" style="text-align:center;flex-shrink:0;">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'c543bedfcd8b2c2e2a4fdf03fb87a810',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://verticallysaturate.com/c543bedfcd8b2c2e2a4fdf03fb87a810/invoke.js"></script>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="privacy-policy" class="footer-link-btn">Privacy Policy</a>
+    <a href="terms" class="footer-link-btn">Terms & Conditions</a>
+    <a href="disclaimer" class="footer-link-btn">Disclaimer</a>
+    <a href="about" class="footer-link-btn">About Us</a>
+    <a href="contact" class="footer-link-btn">Contact Us</a>
+  </div>
+  <div class="footer-copyright">
+    <img src="icon.png" style="width:18px;height:18px;border-radius:4px;" onerror="this.style.display='none'">
+    <span>&copy; 2026 Elky Games. All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script>
+/* ==================== CATEGORY GAMES DATA ==================== */
+var CATEGORY_NAME = "🗺️ Adventure";
+var ALL_GAMES = [{"id":"109352","title":"Hidden Object: My Hotel","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-109352/icon/a6b9915886a795de6a12ea045ae44350672228c3efe5081d717873e61255c837?width=448","coverUrl":"https://static.playgama.com/p-img/pg/hidden-object-my-hotel/big-preview/94eab6bba922419d904b5872c8a1fb52?width=448","gameUrl":"https://playgama.com/export/game/hidden-object-my-hotel?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Hidden Objects: My Hotel – A fun hidden-object game where you help the heroine restore her dream hotel! After buying the old building, she needs your help to clean up cluttered rooms, find hidden items, and bring back its lost charm.\n\nFeatures:\n🔍 Hidden Object Hunt – Search for cleverly placed items in chaotic scenes.\n💡 Smart Hints – Stuck? Use hints to spot tricky objects!\n🎨 Vivid Graphics – Detailed, colorful scenes for immersive gameplay.\n\nPerfect for casual players who love renovation and puzzle games!\n\n","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🗺️ Adventure","🖱️ Mouse","🎮 Popular","🧠 Logic"],"videoUrl":"https://static.playgama.com/p-video/e30b44245722498a9b6271a5aa832b4c/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"120649","title":"Hidden Objects: Island","imageUrl":"https://static.playgama.com/p-img/pg/hidden-objects-island/icon/c0fb39a37f7440e4a4e745b6e8d877c5?width=448","coverUrl":"https://static.playgama.com/p-img/pg/hidden-objects-island/big_preview/f23b7b464ab64392a1a16f5b1d8b0b0b?width=448","gameUrl":"https://playgama.com/export/game/hidden-objects-island?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Step into the world of hidden secrets and surprises, where every location tells a story. From serene beaches and tranquil Japanese gardens to magical flying houses and rustic fishing villages, this game takes you to breathtaking destinations. Uncover the secrets behind each scene as you search and find hidden objects, solve the puzzles and collect rare treasures!","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🗺️ Adventure"],"videoUrl":"https://static.playgama.com/p-video/3ccef024cc2f4bc9adef7e98ec7b2197/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"115955","title":"Blackriver Mystery. Hidden Objects","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-115955/icon/a5e51d9ec76955ae8c3144cc56189ee39e82c217315061dfc3240660b042ce78?width=448","coverUrl":"https://static.playgama.com/p-img/pg/blackriver-mystery-hidden-objects/big-preview/7fd15bd991f24416bedfb78a3408ce87?width=448","gameUrl":"https://playgama.com/export/game/blackriver-mystery-hidden-objects?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"\"Blackriver Mystery. Hidden Objects\" is a new game in which you have to try on the role of a mystical detective, the one who is destined to restore the town from the ruins and solve its mystery. Here you will find a lot of interesting quests, unique collections, popular mini-games (such as three-in-a-row, wheel of fortune and others).\n\nIt's time to solve the riddle of Black River, detective!\n\nMain features of the game:\n- the need to rebuild the city from the ruins;\n- search for items in the most beautiful locations;\n- an intriguing plot;\n- monsters;\n- fascinating puzzles and mini-games;\n- ominous anomalies;\n- search for items like a real detective;\n\nExplore locations, find the most difficult items following an interesting plot. Play three-in-a-row and use boosters. The fate of the whole city is in your hands!\n\nGood luck, Detective.","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🧩 Puzzle","📖 Story","🗺️ Adventure","👆 Point \u0026 Click","🧠 Logic","🧠 Brain"],"videoUrl":"https://static.playgama.com/p-video/4c018bb8de678903237abedac15aa6cc/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"108567","title":"Mystery of the Old House: Hidden Objects","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-108567/icon/74472f88fc45005b3f7081075b8eee5682a20f8f29bfbe465e58d7cb9057363f?width=448","coverUrl":"https://static.playgama.com/p-img/pg/mystery-of-the-old-house-hidden-objects/big-preview/f64b27344ff549f7915236677b009098?width=448","gameUrl":"https://playgama.com/export/game/mystery-of-the-old-house-hidden-objects?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Every corner holds a secret, and every find brings you closer to the solution.\n\nExplore old rooms full of antiques and forgotten things. Find the hidden objects and uncover all the secrets","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🗺️ Adventure","🧩 Puzzle","👆 Point \u0026 Click"],"videoUrl":"https://static.playgama.com/p-video/05fe33e12bd14e489adc38faed1a5675/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"109148","title":"Schoolboy Runaway: room escape","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-109148/icon/103d78aaa32fcfb8630ee603b9efb5a92a6331c9f514fda68591f87aff53034b?width=448","coverUrl":"https://static.playgama.com/p-img/pg/schoolboy-runaway-room-escape/big-preview/586c1992919f4498a268e78d7525e837?width=448","gameUrl":"https://playgama.com/export/game/schoolboy-runaway-room-escape?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Skuf dad won't let you go for a walk, can you escape room? Make first stealth room escape! Schoolboy kid wants to runaway, not learn lessons, so go escape room!\n\n\"Schoolboy Runaway: room escape\" is an exciting 3D first-person quest where you are a schoolboy kid and strict parents do not let you go outside.\n\n👨👩‍🦱 Dad and mom are constantly giving you tasks, like cleaning toys or washing the floor, but schoolboy patience is running out! It's time to search hidden objects in house and escape room! 🏃‍♂️\n\n⭐⭐⭐⭐⭐ Please write your questions and ideas for new levels!","category":"🗺️ Adventure","categories":["🗺️ Adventure","🎮 Escape","🔍 Hidden Object","👆 Point \u0026 Click","👻 Horror"],"videoUrl":"https://static.playgama.com/p-video/d7714ea9d33a4d5da9eda6fe4bb38c10/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"112782","title":"Escape Strange Girl’s House 2","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-112782/icon/d88bad8d545cf5a4f5a750c0dd6b05ab18f253f4451ceda58868fa72a21cb147?width=448","coverUrl":"https://static.playgama.com/p-img/pg/escape-strange-girls-house-2/big-preview/f14f260c150e4af9a167c04c619fac39?width=448","gameUrl":"https://playgama.com/export/game/escape-strange-girls-house-2?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"You play as a private detective searching for a missing person who disappeared a month ago. The investigation leads you to an isolated house that hides a dark and twisted secret. Inside lives a strange girl — and the things she does are beyond imagination.\n\nExplore every room, collect items, combine them, and use them in the right places to progress. Each clue brings you closer to uncovering the truth about the missing person and the terrifying story behind this house.\n\nThis is a classic first-person point and click adventure with atmospheric music, logical puzzles, and a dark, mysterious story. Every sound and every object matters. Will you uncover the secret and escape before it’s too late?","category":"🎮 Escape","categories":["🎮 Escape","🔍 Hidden Object","🗺️ Adventure","👆 Point \u0026 Click","🧠 Brain","📖 Story","🎮 Rpg","👻 Horror"],"videoUrl":"https://static.playgama.com/p-video/0ee001cb1895f7f9af3739fd6fd564e2/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"106390","title":"Detective Max Mystery: The Disappearance of Mr. Winters","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-106390/icon/4ac7e83a6aae17a94463d50b290db31c98b4395af4ddc0ffc8ba278240f58402?width=448","coverUrl":"https://static.playgama.com/p-img/pg/detective-max-mystery-the-disappearance-of-mr-winters/big-preview/f21d60d399f84a2e90112f3317c47b0f?width=448","gameUrl":"https://playgama.com/export/game/detective-max-mystery-the-disappearance-of-mr-winters?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Game description:\n\n🔎 Become a detective in a new adventure story based game! 🔍\n\nThis part of Detective Max Mystery series is called “THE DISAPPEARANCE OF MR.WINTERS”.\n\nDetective Max has received a curious postcard from his neighbour, Benedict Winters. In that note he tells that he moved in a hurry and does not plan on returning. He then asks to find a small mystery box he had lost.\n\n🔎 Escape room + classic detective genre = sounds like fun! 🔍\n\n\nESCAPE ROOM DETECTIVE GAMES\n\n—Use forensic science and the power of your grey sells\n—Examine the crime scene\n—Collect case evidence\n—Identify the suspects, their motive and alibi\n—Escape the room by solving mind-boggling puzzles and riddles\n—Enjoy good story based detective games","category":"🗺️ Adventure","categories":["🗺️ Adventure","👆 Point \u0026 Click","🔍 Hidden Object","📖 Story","🎮 Escape","🧠 Logic"],"videoUrl":"https://static.playgama.com/p-video/cc662cdeb36c43bb9ec658b6e5bef1c4/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"112603","title":"Mike Lost In Desert - Hidden Object","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-112603/icon/abbac239488433cd64ff4114704de6441e2ba010c38cf602025d437638a86f25?width=448","coverUrl":"https://static.playgama.com/p-img/pg/mike-lost-in-desert--hidden-object/big-preview/a890783e79ba4885951ea41441e9f518?width=448","gameUrl":"https://playgama.com/export/game/mike-lost-in-desert--hidden-object?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Mike Lost in Desert – Hidden Object\n\nAfter a sudden engine failure, Mike was forced to make an emergency landing in the middle of an endless desert. His plane is destroyed, his supplies are running out, and dangerous bandits are on his trail.\n\nWandering under the burning sun, Mike must search for useful items, explore mysterious ruins, and survive against all odds. Each discovery brings him one step closer to salvation or to his doom.\n\nWill he find civilization before the desert claims his life, or will the bandits reach him first?\n\nFeatures:\nFind hidden objects in beautifully hand-painted desert locations.\nFollow a story of survival and determination.\nImmerse yourself in the calm but tense atmosphere of the desert.\n\nCan you help Mike survive the unforgiving sands and find his way back to safety?","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🗺️ Adventure","🎮 Escape","👆 Point \u0026 Click"],"videoUrl":"https://static.playgama.com/p-video/e36fbf812156459d28190ff687782282/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"109032","title":"Find the Vampire","imageUrl":"https://static.playgama.com/p-img/pg/find-the-vampire/icon/81a09a4b1790467f80ad170aeedd6521?width=448","coverUrl":"https://static.playgama.com/p-img/pg/find-the-vampire/big_preview/e648c547d27347b7bf8126027148cc25?width=448","gameUrl":"https://playgama.com/export/game/find-the-vampire?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Looking for an exciting vampire game? This is a casual 3D game where you act as a hunter to put an end to the vampire uprising. Your task is to identify the bloodsuckers among us, destroy them and free the city from the threat.\n\nIn this game, vampires disguise themselves as ordinary people, animals and even objects. Use unique exterminator kits and detectors to expose the hidden enemies. Unlock new areas, complete various levels and defeat the Vampire Lord to save the citizens.\n\nKEY FEATURES:\n- Vampire Exterminator Kits: Get new tools to fight the bloodsuckers.\n- Search Among Us: Vampires can be anyone - from neighbors to trees.\n- Rescue Citizens: Free people from vampire isolation.\n- New Locations: Complete levels in different areas of the city.\n- Vampire Tactics: Vampires become more cunning with each level.\n- Story Levels: Each location reveals a unique story.","category":"🗺️ Adventure","categories":["🗺️ Adventure","🔍 Hidden Object","📖 Story","🎮 3d","🎮 Halloween","🎮 Unity"],"videoUrl":"https://static.playgama.com/p-video/f2b1386e167b465692c73d52a68158ce/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"117446","title":"Find Brainrot Obby","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-117446/icon/1bd5201f672547d47e92cec483a4e1fe73551feb423c0d1da164d043ce923f62?width=448","coverUrl":"https://static.playgama.com/p-img/pg/find-brainrot-obby/big-preview/95c09e406c024f08938bb6f4a1de367d?width=448","gameUrl":"https://playgama.com/export/game/find-brainrot-obby?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"This is an obby game about exploration, strange places, and unexpected discoveries.\nBrainrots are hidden everywhere — on rooftops, under platforms, behind walls, and in the most unexpected spots.\n\nThere is no right path here.\nIf something looks strange, it probably hides something.\n\nExplore the world, beat the obbies, discover secrets, and collect all Brainrots.\nCan you see all the absurdity this world has to offer?","category":"🎮 Obby","categories":["🎮 Obby","🔍 Hidden Object","🗺️ Adventure"],"videoUrl":"https://static.playgama.com/p-video/949e164efaf74aa19d0822b6a861cadd/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"115285","title":"Loot Island - Treasure Digger","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-115285/icon/b30e68e80b53f0119e38811929fce6ea18bccbc4c8454c3417bf19f03f29506a?width=448","coverUrl":"https://static.playgama.com/p-img/pg/loot-island-treasure-digger/big-preview/a3fa2129fba241db9872627798c0b012?width=448","gameUrl":"https://playgama.com/export/game/loot-island-treasure-digger?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Embark on an exciting treasure hunt! Immerse yourself in fascinating landscapes, look for crosses, and dig up precious items. Collect the loot in your backpack and stack it in a mesmerizing Tetris-style puzzle. Get ready for a game that combines strategic excavation and exciting loot stacking!\n\n🗺️ Focus on the map\n💎 Dig deeper into the fascinating landscapes to find precious items\n🎒 Collect the loot in your backpack\n⚡️ Stack them in a mesmerizing Tetris-style puzzle\n🧩 Stack gems, coins, and more to maximize your treasure profit\n🛠️ Upgrade your tools and unlock new maps as you delve deeper into the adventure\n🌟 Test your skill, strategy, and luck in this addictive game!","category":"🗺️ Adventure","categories":["🗺️ Adventure","🧩 Puzzle","🔍 Hidden Object"],"videoUrl":"https://static.playgama.com/p-video/c774525f326191836672fc8077743c23/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"123663","title":"Unfamiliar Object","imageUrl":"https://static.playgama.com/p-img/pg/unfamiliar-object/icon/332e1a4529224bcbaa74205fb29aa905?width=448","coverUrl":"https://static.playgama.com/p-img/pg/unfamiliar-object/big_preview/388ffcd429c64f14aa2411b628d3abb6?width=448","gameUrl":"https://playgama.com/export/game/unfamiliar-object?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Unfamiliar Object is a first-person office-horror inspection game about finding the one thing that does not belong. Read the rules, explore a silent night-shift corridor, photograph the true anomaly, and submit your evidence by fax before procedure turns hostile. Each shift twists ordinary office objects into something quietly impossible.\n\n","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","👻 Horror","🎮 3d","🗺️ Adventure","🎮 Scary"],"videoUrl":"","createdAt":"2026-10-12T05:58:55.521Z","playsCount":0},{"id":"99671","title":"Hidden Object: Clues and Mysteries","imageUrl":"https://static.playgama.com/p-img/pg/backfill/game-99671/icon/bdfd60d3d7f79219244f36d82f5cdbe343dc93ae36c5c6c14acc53741390637a?width=448","coverUrl":"https://static.playgama.com/p-img/pg/hidden-object-clues-and-mysteries/big-preview/918efb60143240eb99d962fecc6cdaf8?width=448","gameUrl":"https://playgama.com/export/game/hidden-object-clues-and-mysteries?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Hidden Object: Clues and Mysteries transforms the classic hidden object genre into an engaging adventure. Immerse yourself in a world of riddles, concealed items, and unsolved enigmas.\n\nJoin an experienced detective whose calm and reassuring voice will guide you every step of the way. Search for clues in a variety of charming locations: cozy living rooms, bustling cafés, warm kitchens, private studies, and more.\n\nEach scene is a unique setting where your keen eye and clever thinking will be essential to uncover all the hidden items.\n\nEnjoy serene melodies and a cozy ambiance, as this game is designed for relaxation and leisure. Take your time to solve every mystery and feel the satisfaction of becoming a true detective.","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🗺️ Adventure","👆 Point \u0026 Click","📱 Mobile"],"videoUrl":"https://static.playgama.com/p-video/0cf7cb9f43fc45968d1944018b90b0d9/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.520Z","playsCount":0},{"id":"120105","title":"Hidden Object: Street Of Secrets","imageUrl":"https://static.playgama.com/p-img/pg/hidden-object-street-of-secrets/icon/2a108879f486489894de1c7ecbbdbdda?width=448","coverUrl":"https://static.playgama.com/p-img/pg/hidden-object-street-of-secrets/big_preview/b4e56a265daf458f9027f9fa24f4f10d?width=448","gameUrl":"https://playgama.com/export/game/hidden-object-street-of-secrets?clid=p_affbb8b2-29ee-4d27-b0fa-8cda556829d0","description":"Hidden Objects: Street of Secrets is an atmospheric hidden object game where you become the lead detective. A mysterious case awaits, and your insightful assistant is there to help, offering hints and guiding you to crucial details.\n\nExplore a series of picturesque and mysterious locations. Each scene is a new challenge for your keen eye, from evening-lit streets and cozy cafés to enigmatic rooms where every detail matters. Find all the hidden objects to progress.\n\nImmerse yourself in the perfect relaxing experience. Enjoy stylish graphics, a calm, detective-themed soundtrack, and leisurely yet engaging gameplay. It's the ideal way to unwind and sharpen your powers of observation.\n\n\"[Core Gameplay \u0026 Story]\n\nQ: What is the game about and what do you do?\nA: It is a detective game where players must find hidden objects.\n\nQ: Is there a storyline in the game?\nA: Yes, and it is engaging to follow.\n\nQ: What is the game's unique hook? What makes it stand out to players?\nA: It features beautiful graphics and requires players to think critically and pay close attention to detail.\n\nQ: What are the most engaging content elements (weapons, cars, locations, skills, franchise references, etc.)?\nA: The beautifully designed locations.\n\n[Economy \u0026 Customization]\n\nQ: What currencies are available and what can they be spent on?\nA: Players earn coins and trophies, which can be used to buy outfits for the main character.\n\nQ: Is there character customization? Can you adjust the hero's appearance, use a level editor, tune cars, etc.?\nA: Yes, there are different dresses available for the main character.\n\n[Retention \u0026 Engagement]\n\nQ: Is it recommended to play with sound for better immersion, or will there be difficulties playing without it?\nA: Yes, the game's music does an excellent job of building the atmosphere.\"\t","category":"🔍 Hidden Object","categories":["🔍 Hidden Object","🗺️ Adventure","📖 Story","🧠 Intelligence"],"videoUrl":"https://static.playgama.com/p-video/57911db9ba1b4a299952c3c55b3c4e5a/orig_length_h320.mp4","createdAt":"2026-10-12T05:58:55.520Z","playsCount":0}];
+var REVERSE_ORDER = true;
+
+/* ==================== APPS DATA ==================== */
+var APPS_DATA = [
+  { appName: "Elky - Online Games Hub", iconUrl: "icon.png", subtitle: "Welcome to Elky - Online Games 🎮✨!", playStoreUrl: "https://play.google.com/store/apps/details?id=com.elky" },
+  { appName: "Horror Games Hub", iconUrl: "icon.png", subtitle: "👻 Ultimate mini-game destination!", playStoreUrl: "https://play.google.com/store/apps/details?id=com.horrorgames" },
+  { appName: "Car Games Hub", iconUrl: "icon.png", subtitle: "🏁 Ultimate Car Racing destination!", playStoreUrl: "https://play.google.com/store/apps/details?id=com.cargameshub" }
+];
+
+/* ==================== STATE ==================== */
+var currentlyDisplayedGames = [];
+var currentViewMode = "cover";
+var likedGameIds = [];
+try { likedGameIds = JSON.parse(localStorage.getItem("elky_liked_games") || "[]"); } catch(e) { likedGameIds = []; }
+var badgeColors = ["#FF0055","#7A00FF","#00E5FF","#00FF66","#FFB703","#FF007A","#008F4C","#D500F9"];
+var PAGE_RELEASE_DATE = new Date("2026-10-12T05:59:08.042Z");
+
+/* ==================== UTILS ==================== */
+function slugify(t) {
+  var s = String(t||"").toLowerCase().replace(/[^\w\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"");
+  if (s.length > 60) s = s.substring(0,60).replace(/-$/,"");
+  return s || "game";
+}
+function escapeHtml(s) {
+  return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+/* ==================== RANDOM COUNTERS ==================== */
+function getGameSeed(gameId) {
+  var seed = 0;
+  for (var i = 0; i < gameId.length; i++) {
+    seed = ((seed << 5) - seed) + gameId.charCodeAt(i);
+    seed = seed & seed;
+  }
+  return Math.abs(seed);
+}
+function generateRandomPlayerCount(gameId) {
+  var now = new Date();
+  var daysSinceUpload = Math.max(0, Math.floor((now - PAGE_RELEASE_DATE) / (1000 * 60 * 60 * 24)));
+  var seed = getGameSeed(gameId);
+  var growthPerDay = (seed % 50) + 20;
+  var baseGrowth = daysSinceUpload * growthPerDay;
+  var randomBoost = Math.floor(Math.random() * 400) + 100;
+  var seedBoost = seed % 1000;
+  var total = baseGrowth + randomBoost + seedBoost + 50;
+  if (total > 500000) total = 500000 - Math.floor(Math.random() * 10000);
+  return total;
+}
+
+/* ==================== HISTORY TRACKING ==================== */
+function addToHistory(gameId) {
+  try {
+    var history = JSON.parse(localStorage.getItem("elky_history_games") || "[]");
+    history = history.filter(function(id) { return id !== gameId; });
+    history.unshift(gameId);
+    if (history.length > 100) history = history.slice(0, 100);
+    localStorage.setItem("elky_history_games", JSON.stringify(history));
+  } catch(e) {}
+}
+
+/* ==================== ORDER TOGGLE ==================== */
+function updateOrderButtons() {
+  var navIcon = document.getElementById("navOrderIcon");
+  if (!navIcon) return;
+  navIcon.className = REVERSE_ORDER ? "fa-solid fa-arrow-down-short-wide" : "fa-solid fa-arrow-up-short-wide";
+}
+function toggleOrder() {
+  REVERSE_ORDER = !REVERSE_ORDER;
+  updateOrderButtons();
+  applySortAndRender();
+}
+function applySortAndRender() {
+  var base = ALL_GAMES.slice();
+  base.sort(function(a, b) {
+    var ta = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+    var tb = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+    return REVERSE_ORDER ? (tb - ta) : (ta - tb);
+  });
+  currentlyDisplayedGames = base;
+  renderGamesGrid();
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  ALL_GAMES.forEach(function(g, i) { g.badgeColor = badgeColors[i % badgeColors.length]; });
+  applySortAndRender();
+  renderAppsModal();
+  updateOrderButtons();
+});
+
+/* ==================== RENDER GAMES ==================== */
+function renderGamesGrid() {
+  var grid = document.getElementById("gamesGrid");
+  grid.innerHTML = "";
+  var isMobile = window.innerWidth <= 600;
+  if (currentlyDisplayedGames.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px;color:#94A3B8;"><i class="fa-solid fa-sports-esports" style="font-size:48px;margin-bottom:16px;display:block;"></i>No games found</div>';
+    return;
+  }
+  var frag = document.createDocumentFragment();
+  currentlyDisplayedGames.forEach(function(game) {
+    var isLiked = likedGameIds.indexOf(game.id) !== -1;
+    var plays = generateRandomPlayerCount(String(game.id));
+    var displayImg = (currentViewMode === "cover") ? (game.coverUrl || game.imageUrl) : (game.imageUrl || game.coverUrl);
+    var hasVideo = game.videoUrl && game.videoUrl.trim() !== "";
+    var slug = slugify(game.title);
+    var card = document.createElement("div");
+    card.className = "game-card";
+    card.setAttribute("data-href", slug);
+    card.setAttribute("data-game-id", String(game.id));
+    card.onclick = function() {
+      addToHistory(card.getAttribute("data-game-id"));
+      window.location.href = card.getAttribute("data-href");
+    };
+    if (currentViewMode === "cover" && hasVideo) {
+      (function(v){ card.onmouseenter = function(){ handleMouseEnterCard(card, v); }; })(game.videoUrl);
+      card.onmouseleave = function() { handleMouseLeaveCard(card); };
+    }
+    var imgHTML = '<div class="card-thumbnail-wrapper">' +
+      '<img class="card-thumbnail" src="' + escapeHtml(displayImg) + '" alt="' + escapeHtml(game.title) + '" loading="lazy" onerror="this.src=\'https://via.placeholder.com/400x225/1a1a1e/666?text=Game\'">' +
+      (hasVideo ? '<video class="card-hover-video" loop muted playsinline></video>' : "") +
+      '</div>';
+    var detailsHTML;
+    if (isMobile) {
+      detailsHTML = '<div class="card-details">' +
+        '<div class="card-title">' + escapeHtml(game.title) + '</div>' +
+        '<div class="card-submeta">' +
+        '<span class="card-badge" style="background-color:' + game.badgeColor + '">' + escapeHtml(game.category || "Game") + '</span>' +
+        '<div class="card-bottom-row-mobile">' +
+        '<span class="card-views"><i class="fa-solid fa-users" style="color:var(--cyan-highlight)"></i> ' + plays.toLocaleString() + '</span>' +
+        '<button class="card-like-btn ' + (isLiked?"liked":"") + '" data-id="' + escapeHtml(game.id) + '"><i class="fa-' + (isLiked?"solid":"regular") + ' fa-heart"></i></button>' +
+        '</div></div></div>';
+    } else {
+      detailsHTML = '<div class="card-details">' +
+        '<div class="card-title">' + escapeHtml(game.title) + '</div>' +
+        '<div class="card-submeta">' +
+        '<span class="card-badge" style="background-color:' + game.badgeColor + '">' + escapeHtml(game.category || "Game") + '</span>' +
+        '<span class="card-views"><i class="fa-solid fa-users" style="color:var(--cyan-highlight)"></i> ' + plays.toLocaleString() + '</span>' +
+        '<button class="card-like-btn ' + (isLiked?"liked":"") + '" data-id="' + escapeHtml(game.id) + '"><i class="fa-' + (isLiked?"solid":"regular") + ' fa-heart"></i></button>' +
+        '</div></div>';
+    }
+    card.innerHTML = imgHTML + detailsHTML;
+    frag.appendChild(card);
+  });
+  grid.appendChild(frag);
+  grid.querySelectorAll(".card-like-btn").forEach(function(btn) {
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      toggleLike(btn.getAttribute("data-id"));
+    });
+  });
+}
+function handleMouseEnterCard(cardEl, videoUrl) {
+  if (!videoUrl || videoUrl.trim() === "") return;
+  var v = cardEl.querySelector(".card-hover-video");
+  if (!v) return;
+  v.style.display = "block";
+  if (!v.src) v.src = videoUrl.trim();
+  v.currentTime = 0;
+  v.play().catch(function(){});
+  v.style.opacity = "1";
+}
+function handleMouseLeaveCard(cardEl) {
+  var v = cardEl.querySelector(".card-hover-video");
+  if (!v) return;
+  v.style.opacity = "0";
+  v.pause();
+}
+function setViewMode(mode) {
+  if (currentViewMode === mode) return;
+  currentViewMode = mode;
+  var grid = document.getElementById("gamesGrid");
+  if (mode === "cover") {
+    grid.classList.remove("icon-mode"); grid.classList.add("cover-mode");
+    document.getElementById("btnCoverView").classList.add("active");
+    document.getElementById("btnIconView").classList.remove("active");
+  } else {
+    grid.classList.remove("cover-mode"); grid.classList.add("icon-mode");
+    document.getElementById("btnIconView").classList.add("active");
+    document.getElementById("btnCoverView").classList.remove("active");
+  }
+  renderGamesGrid();
+}
+function handleSearch() {
+  var q = document.getElementById("searchInput").value.toLowerCase().trim();
+  if (q === "") { applySortAndRender(); return; }
+  currentlyDisplayedGames = ALL_GAMES.filter(function(g){
+    if (g.title && g.title.toLowerCase().indexOf(q) !== -1) return true;
+    var gs = (g.categories && g.categories.length) ? g.categories : [g.category];
+    return gs.some(function(c){ return String(c).toLowerCase().indexOf(q) !== -1; });
+  });
+  renderGamesGrid();
+}
+function toggleLike(id) {
+  var i = likedGameIds.indexOf(id);
+  if (i !== -1) likedGameIds.splice(i, 1);
+  else likedGameIds.push(id);
+  try { localStorage.setItem("elky_liked_games", JSON.stringify(likedGameIds)); } catch(e){}
+  renderGamesGrid();
+}
+function togglePlaystoreModal() {
+  var m = document.getElementById("playstoreModal");
+  m.style.display = (m.style.display === "flex") ? "none" : "flex";
+}
+function closePlaystoreModal() { document.getElementById("playstoreModal").style.display = "none"; }
+function handleOutsidePlaystoreClick(e) { if (e.target.id === "playstoreModal") closePlaystoreModal(); }
+function togglePagesModal() {
+  var m = document.getElementById("pagesModal");
+  m.style.display = (m.style.display === "flex") ? "none" : "flex";
+}
+function closePagesModal() { document.getElementById("pagesModal").style.display = "none"; }
+function handleOutsideModalClick(e) { if (e.target.id === "pagesModal") closePagesModal(); }
+function renderAppsModal() {
+  var c = document.getElementById("playstoreAppList");
+  if (!c) return;
+  var html = "";
+  APPS_DATA.forEach(function(app) {
+    html += '<div class="playstore-app-card">' +
+      '<img src="' + app.iconUrl + '" class="playstore-app-icon" alt="' + escapeHtml(app.appName) + '" onerror="this.style.display=\'none\'">' +
+      '<div class="playstore-app-info">' +
+      '<div class="playstore-app-title">' + escapeHtml(app.appName) + '</div>' +
+      '<div class="playstore-app-desc">' + escapeHtml(app.subtitle) + '</div>' +
+      '</div>' +
+      '<a href="' + app.playStoreUrl + '" target="_blank" class="playstore-download-btn"><i class="fa-brands fa-google-play"></i></a>' +
+      '</div>';
+  });
+  c.innerHTML = html;
+}
+window.addEventListener("resize", function() { renderGamesGrid(); });
+</script>
+
+<div class="playstore-modal" id="playstoreModal" onclick="handleOutsidePlaystoreClick(event)">
+  <div class="playstore-modal-box">
+    <div class="drawer-header">
+      <div><h3><i class="fa-brands fa-google-play" style="color:#01d679;"></i> Our Apps</h3></div>
+      <div class="close-popup-btn" onclick="closePlaystoreModal()"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div class="playstore-app-list" id="playstoreAppList"></div>
+  </div>
+</div>
+<div class="pages-modal" id="pagesModal" onclick="handleOutsideModalClick(event)">
+  <div class="pages-modal-box">
+    <div class="drawer-header">
+      <h3><i class="fa-solid fa-shield-halved" style="color:var(--cyan-highlight);"></i> Website Pages</h3>
+      <div class="close-popup-btn" onclick="closePagesModal()"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div class="pages-modal-list">
+      <a href="privacy-policy" class="pages-modal-item"><i class="fa-solid fa-user-shield"></i> Privacy Policy</a>
+      <a href="terms" class="pages-modal-item"><i class="fa-solid fa-file-contract"></i> Terms & Conditions</a>
+      <a href="disclaimer" class="pages-modal-item"><i class="fa-solid fa-triangle-exclamation"></i> Disclaimer</a>
+      <a href="about" class="pages-modal-item"><i class="fa-solid fa-circle-info"></i> About Us</a>
+      <a href="contact" class="pages-modal-item"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
